@@ -1,0 +1,67 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="loading" id="loading">
+        <i class="fa fa-spinner fa-spin fa-5x"></i> 
+    </section>
+    <aside id="sideBar">
+        <div class="inner-side ">
+            <div>
+                <ul class="list-unstyled links mt-5">
+                    <li onclick="searchInputsValues();sideClosed()" id="searchLink" class="link-item"><a class="text-capitalize" href="#home">search</a></li>
+                    <li onclick="getCategories();sideClosed()" id="categoryLink" class="link-item"><a class="text-capitalize" href="#counter">categories</a></li>
+                    <li onclick="getAllAreas();sideClosed()" class="link-item"><a class="text-capitalize" href="#details">area</a></li>
+                    <li onclick="getIngredients();sideClosed()" class="link-item"><a class="text-capitalize" href="#contact">ingrediens</a></li>
+                    <li onclick="displayContact();sideClosed()" class="link-item"><a class="text-capitalize" href="#contact">contact us</a></li>
+                </ul>
+
+            </div>
+            <div class="social-icons ">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-solid fa-globe"></i>
+                <p class="copyright">Copyright Â© 2019 All Rights
+                    Reserved.</p>
+            </div>
+        </div>
+        <div class="outer-side">
+            <div class="logo">
+                <img src="images/logo.png"  alt="">
+            </div>
+            <div id="closeBtn">
+                <i class="fa fa-x x-icon fa-2x d-none"></i>
+                <i class="fa-solid bar-icon fa-align-justify fa-2x"></i>
+            </div>
+            <div class="outer-links d-flex flex-column">
+                <i class="fa-solid fa-globe pb-1"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </aside>
+    <section class="container w-75" id="search">
+    </section>
+    <section class="min-vh-100 position-relative">
+        <div class="inner-loading">
+            <i class="fa fa-spinner fa-spin fa-5x"></i> 
+        </div>
+        <div class="container">
+            <div class="row py-5 g-4 " id="allData">
+                
+            </div>
+        </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

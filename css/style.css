@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+#home{
+    position: relative;
+    height: 100vh;
+    
+}
+.my-card{
+    cursor: pointer;
+}
+#sideBar{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 6666;
+    display: flex;
+}
+.inner-side{
+    padding-left: 15px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between ;
+}
+.inner-side li{
+    /* padding: 15px; */
+    margin-bottom: 20px;
+    
+}
+#close-side{
+    position: absolute;
+    right: 30px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all .5s;
+    top: 20px;
+}
+.inner-side a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: all .5s;
+}
+i{
+    cursor: pointer;
+}
+.links{
+    overflow: hidden;
+}
+.link-item{
+    position: relative;
+    /* top: 220px; */
+}
+.social-icons{
+    color: white;
+    cursor: pointer;
+}
+.logo img{
+    width: 50px;
+}
+.copyright{
+    width: 70%;
+}
+.outer-side{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 23px 8px;
+    align-items: center;
+}
+.loading,.inner-loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading,.inner-loading i{
+    color: white;
+}
+
+.card-layer{
+    position: absolute;
+    background-color: rgba(255,255,255,.7);
+    top: 120% ;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 10px;
+    transition: all .7s;
+}
+.my-card:hover .card-layer{
+    top: 0;
+}
+
+.form-control::placeholder{
+    color: gray;
+}
+
+.alert{
+    width: fit-content;
+}
+.loading-screen{
+    z-index: 999;
+    display: flex;
+}
+
+.inner-loading-screen{
+    position: absolute;
+    z-index: 9;
+    background-color: #0D0D0D;
+    display: flex;
+}
+.pointer{
+    cursor: pointer !important;
+}
